@@ -1,0 +1,46 @@
+﻿body{
+    background-color: #222;
+    color: #FFF;
+}
+#piechart{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+}
+#title{
+    text-align: center;
+    font-size: 24pt;
+}
+#buttons{
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 530px;
+}
+#sleepHours{
+    text-align: center;
+    font-size: 14pt;
+}
+#legend{
+    text-align: center;
+    font-size: 14pt;
+}
+#full{
+    color: #000;
+    background-color: #84A;
+}
+#half{
+    color: #000;
+    background-color: #39D;
+}
+#twenty{
+    color: #000;
+    background-color: #2C7;
+}
+#awake{
+    color: #000;
+    background-color: #EFF;
+}

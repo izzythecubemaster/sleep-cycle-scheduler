@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sleep Cycle Scheduler</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+    <script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <!-- Title -->
+    <div id="title">Sleep Cycle Visualizer</div>
+
+    <!-- Shows the name of current Sleep Schedule -->
+    <div id="sleepHours">
+        Currently Showing: <div id="schedule">None</div>
+    </div>
+
+    <!-- Pie Chart of Time -->
+    <canvas id="piechart" width="400" height="400"></canvas>
+
+    <!-- Shows how many hours of sleep per night -->
+    <div id="sleepHours">
+        Hours of sleep per night: <div id="hours">0</div>
+    </div>
+
+    <!-- Buttons -->
+    <div id="buttons" class="btn-group" data-toggle="buttons" onchange="buttonPressed();">
+        <label class="btn btn-primary">
+            <input type="radio" name="cycles" id="cycles1" autocomplete="off" value="monophasic" />
+            Mono-Phasic
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="cycles" id="cycles2" autocomplete="off" value="siesta" />
+            Bi-Phasic
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="cycles" id="cycles4" autocomplete="off" value="triphasic" />
+            Tri-Phasic
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="cycles" id="cycles5" autocomplete="off" value="uberman" />
+            Uberman
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="cycles" id="cycles6" autocomplete="off" value="dymaxion" />
+            Dymaxion
+        </label>
+    </div>
+    <br />
+    <br />
+
+    <!-- Legend -->
+    <div id="legend">
+        Legend:
+        <div id="full">Full Hour of Sleep</div>
+        <div id="half">Half Hour of Sleep</div>
+        <div id="twenty">20 Minutes of Sleep</div>
+        <div id="awake">Time Awake</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/pie.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
